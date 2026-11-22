@@ -14,7 +14,7 @@ const TaskCard = ({task}) => {
   
   const priorityStyle=priorityStyles[task.priority]
   return (
-    <div className="w-80 flex flex-col gap-1 rounded-lg border border-[#D9F99D]  bg-[#090E14] p-2 text-white"> 
+    <div className="lg:w-80 flex flex-col gap-1 rounded-lg border border-[#D9F99D]  bg-[#090E14] p-2 text-white"> 
       {/* Card Heading */}
       <div className='flex justify-between'>
       <div className='flex gap-2'>
@@ -35,7 +35,7 @@ const TaskCard = ({task}) => {
 
      
       <div className="px-2 ">
-        <h3 className="text-sm font-semibold mb-3">
+        <h3 className="text-sm font-semibold mb-3 text-wrap">
           {task.description}
         </h3>
 
